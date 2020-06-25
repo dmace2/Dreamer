@@ -14,6 +14,7 @@ struct AuthView: View {
         NavigationView {
             SignInView()
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
