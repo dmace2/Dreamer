@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import AuthenticationServices
+import CryptoKit
 
 
 struct AuthView: View {

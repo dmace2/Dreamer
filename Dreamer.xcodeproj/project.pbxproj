@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5E4035A824066AF41B556DA7 /* Pods_Dreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614FB1839C23B48743F30BCC /* Pods_Dreamer.framework */; };
+		F01DA73924A5254B003071AB /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */; };
+		F01DA73B24A527CD003071AB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73A24A527CD003071AB /* MenuView.swift */; };
+		F01DA73D24A52884003071AB /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73C24A52884003071AB /* MenuRow.swift */; };
+		F01DA73F24A52ADD003071AB /* BoardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73E24A52ADD003071AB /* BoardPickerView.swift */; };
+		F01DA74124A52CB4003071AB /* BoardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74024A52CB4003071AB /* BoardContainerView.swift */; };
+		F01DA74324A53D0A003071AB /* BoardPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */; };
+		F01DA74524A542CC003071AB /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74424A542CC003071AB /* BoardBuilder.swift */; };
+		F01DA74724A548F7003071AB /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74624A548F7003071AB /* TextView.swift */; };
 		F04CA75A24819DBD007A455E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75924819DBD007A455E /* AuthView.swift */; };
 		F04CA75C2481AC01007A455E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75B2481AC01007A455E /* SignUpView.swift */; };
 		F04CA75E2481AC3B007A455E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75D2481AC3B007A455E /* SignInView.swift */; };
-		F04CA7632481B7DB007A455E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA7622481B7DB007A455E /* Menu.swift */; };
-		F04CA7662481B99A007A455E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA7652481B99A007A455E /* Row.swift */; };
 		F04CA7682481D837007A455E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA7672481D837007A455E /* ContentView.swift */; };
-		F04CA76B2481D95E007A455E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA76A2481D95E007A455E /* BoardView.swift */; };
-		F04CA76D2481E172007A455E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA76C2481E172007A455E /* ImageLoader.swift */; };
-		F076F2082482B8F700D7F26D /* FullMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076F2072482B8F700D7F26D /* FullMenu.swift */; };
-		F076F20A2482BB9700D7F26D /* BoardItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076F2092482BB9700D7F26D /* BoardItemModel.swift */; };
-		F076F20C2482BBB500D7F26D /* BoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076F20B2482BBB500D7F26D /* BoardItem.swift */; };
+		F076F20C2482BBB500D7F26D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076F20B2482BBB500D7F26D /* Board.swift */; };
 		F0AAB9D82481975C00767F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAB9D72481975C00767F48 /* AppDelegate.swift */; };
 		F0AAB9DA2481975C00767F48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAB9D92481975C00767F48 /* SceneDelegate.swift */; };
 		F0AAB9DE2481975D00767F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AAB9DD2481975D00767F48 /* Assets.xcassets */; };
@@ -33,18 +35,20 @@
 		614FB1839C23B48743F30BCC /* Pods_Dreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84762862102EFA4A8F6FE2AE /* Pods-Dreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.debug.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.debug.xcconfig"; sourceTree = "<group>"; };
 		BE296AE60E4308F58F139DE0 /* Pods-Dreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.release.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.release.xcconfig"; sourceTree = "<group>"; };
+		F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		F01DA73A24A527CD003071AB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F01DA73C24A52884003071AB /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		F01DA73E24A52ADD003071AB /* BoardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPickerView.swift; sourceTree = "<group>"; };
+		F01DA74024A52CB4003071AB /* BoardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContainerView.swift; sourceTree = "<group>"; };
+		F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPickerViewModel.swift; sourceTree = "<group>"; };
+		F01DA74424A542CC003071AB /* BoardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBuilder.swift; sourceTree = "<group>"; };
+		F01DA74624A548F7003071AB /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		F04CA75924819DBD007A455E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		F04CA75B2481AC01007A455E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F04CA75D2481AC3B007A455E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F04CA75F2481AE70007A455E /* Dreamer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dreamer.entitlements; sourceTree = "<group>"; };
-		F04CA7622481B7DB007A455E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		F04CA7652481B99A007A455E /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		F04CA7672481D837007A455E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F04CA76A2481D95E007A455E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		F04CA76C2481E172007A455E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		F076F2072482B8F700D7F26D /* FullMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMenu.swift; sourceTree = "<group>"; };
-		F076F2092482BB9700D7F26D /* BoardItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemModel.swift; sourceTree = "<group>"; };
-		F076F20B2482BBB500D7F26D /* BoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItem.swift; sourceTree = "<group>"; };
+		F076F20B2482BBB500D7F26D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		F0AAB9D42481975C00767F48 /* Dreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AAB9D72481975C00767F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AAB9D92481975C00767F48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,12 +90,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F01DA73724A5252E003071AB /* SignInWithAppleFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */,
+			);
+			path = SignInWithAppleFlow;
+			sourceTree = "<group>";
+		};
 		F04CA7642481B98E007A455E /* MenuFlow */ = {
 			isa = PBXGroup;
 			children = (
-				F04CA7622481B7DB007A455E /* Menu.swift */,
-				F04CA7652481B99A007A455E /* Row.swift */,
-				F076F2072482B8F700D7F26D /* FullMenu.swift */,
+				F01DA73A24A527CD003071AB /* MenuView.swift */,
+				F01DA73C24A52884003071AB /* MenuRow.swift */,
 			);
 			path = MenuFlow;
 			sourceTree = "<group>";
@@ -99,9 +110,11 @@
 		F04CA7692481D939007A455E /* BoardFlow */ = {
 			isa = PBXGroup;
 			children = (
-				F04CA76A2481D95E007A455E /* BoardView.swift */,
-				F076F2092482BB9700D7F26D /* BoardItemModel.swift */,
-				F076F20B2482BBB500D7F26D /* BoardItem.swift */,
+				F076F20B2482BBB500D7F26D /* Board.swift */,
+				F01DA73E24A52ADD003071AB /* BoardPickerView.swift */,
+				F01DA74024A52CB4003071AB /* BoardContainerView.swift */,
+				F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */,
+				F01DA74424A542CC003071AB /* BoardBuilder.swift */,
 			);
 			path = BoardFlow;
 			sourceTree = "<group>";
@@ -130,7 +143,7 @@
 			children = (
 				F04CA75F2481AE70007A455E /* Dreamer.entitlements */,
 				F04CA7672481D837007A455E /* ContentView.swift */,
-				F04CA76C2481E172007A455E /* ImageLoader.swift */,
+				F01DA73724A5252E003071AB /* SignInWithAppleFlow */,
 				F0AAB9ED2481994700767F48 /* LoginFlow */,
 				F04CA7642481B98E007A455E /* MenuFlow */,
 				F04CA7692481D939007A455E /* BoardFlow */,
@@ -141,6 +154,7 @@
 				F0AAB9E22481975D00767F48 /* LaunchScreen.storyboard */,
 				F0AAB9E52481975D00767F48 /* Info.plist */,
 				F0AAB9DF2481975D00767F48 /* Preview Content */,
+				F01DA74624A548F7003071AB /* TextView.swift */,
 			);
 			path = Dreamer;
 			sourceTree = "<group>";
@@ -283,18 +297,20 @@
 			files = (
 				F0AAB9D82481975C00767F48 /* AppDelegate.swift in Sources */,
 				F0AAB9DA2481975C00767F48 /* SceneDelegate.swift in Sources */,
-				F04CA76D2481E172007A455E /* ImageLoader.swift in Sources */,
-				F04CA76B2481D95E007A455E /* BoardView.swift in Sources */,
 				F04CA75A24819DBD007A455E /* AuthView.swift in Sources */,
-				F076F20C2482BBB500D7F26D /* BoardItem.swift in Sources */,
+				F076F20C2482BBB500D7F26D /* Board.swift in Sources */,
 				F04CA7682481D837007A455E /* ContentView.swift in Sources */,
+				F01DA74524A542CC003071AB /* BoardBuilder.swift in Sources */,
+				F01DA73B24A527CD003071AB /* MenuView.swift in Sources */,
 				F04CA75C2481AC01007A455E /* SignUpView.swift in Sources */,
-				F04CA7632481B7DB007A455E /* Menu.swift in Sources */,
-				F04CA7662481B99A007A455E /* Row.swift in Sources */,
+				F01DA74124A52CB4003071AB /* BoardContainerView.swift in Sources */,
+				F01DA73924A5254B003071AB /* SignInWithAppleButton.swift in Sources */,
+				F01DA73F24A52ADD003071AB /* BoardPickerView.swift in Sources */,
+				F01DA74724A548F7003071AB /* TextView.swift in Sources */,
+				F01DA74324A53D0A003071AB /* BoardPickerViewModel.swift in Sources */,
+				F01DA73D24A52884003071AB /* MenuRow.swift in Sources */,
 				F0AAB9EF248199FB00767F48 /* SessionStore.swift in Sources */,
 				F0AAB9F124819A7400767F48 /* User.swift in Sources */,
-				F076F20A2482BB9700D7F26D /* BoardItemModel.swift in Sources */,
-				F076F2082482B8F700D7F26D /* FullMenu.swift in Sources */,
 				F04CA75E2481AC3B007A455E /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +451,7 @@
 				CODE_SIGN_ENTITLEMENTS = Dreamer/Dreamer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dreamer/Preview Content\"";
-				DEVELOPMENT_TEAM = DF2L4427W9;
+				DEVELOPMENT_TEAM = G466A7N8C9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dreamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -443,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mace.Dreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +474,7 @@
 				CODE_SIGN_ENTITLEMENTS = Dreamer/Dreamer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dreamer/Preview Content\"";
-				DEVELOPMENT_TEAM = DF2L4427W9;
+				DEVELOPMENT_TEAM = G466A7N8C9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dreamer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -466,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mace.Dreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

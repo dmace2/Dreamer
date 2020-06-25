@@ -1,5 +1,5 @@
 //
-//  Row.swift
+//  MenuRow.swift
 //  Dreamer
 //
 //  Created by Dylan Mace on 5/29/20.
@@ -8,26 +8,26 @@
 
 import SwiftUI
 
-struct Row: View {
-    var rowActive: Bool
+struct MenuRow: View {
+    //var rowActive: Bool
     var icon: String
     var text: String
     
     var body: some View {
         HStack {
             Image(systemName: icon)
-                .foregroundColor(rowActive ? Color("Gold") : Color(.white))
-                .font(.system(size: 15, weight: rowActive ? .bold : .regular))
+                .foregroundColor(Color(.white))
+                .font(.system(size: 20, weight: .regular))
                 .frame(width: 48, height: 32)
             
             Text(text)
-                .foregroundColor(rowActive ? Color("Gold") : Color(.white))
-                .font(.system(size: 15, weight: rowActive ? .bold : .regular))
+                .foregroundColor(Color(.white))
+                .font(.system(size: 15, weight: .regular))
             
             Spacer()
         }
-    .padding(4)
-        .background(rowActive ? Color(.white) : Color(.white).opacity(0))
+        .padding(.top, 30)
+        .background(Color(.white).opacity(0))
         .padding(.trailing, 5)
         .padding(.leading, 5)
         .cornerRadius(10)
@@ -37,8 +37,8 @@ struct Row: View {
 
 
 
-struct Row_Previews: PreviewProvider {
+struct MenuRow_Previews: PreviewProvider {
     static var previews: some View {
-        Row(rowActive: true, icon: "house", text: "Dashboard")
+        MenuRow(icon: "house", text: "Dashboard")
     }
 }

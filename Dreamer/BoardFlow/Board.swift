@@ -7,6 +7,11 @@
 //
 
 import Foundation
-public class BoardItem {
+struct Board: Identifiable {
+    var id: String = UUID().uuidString
+    var title: String
+    var text: String
+    var color: [Double]
+    var timeStamp: Date
     
 }

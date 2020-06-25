@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var session: SessionStore
-    @State var open = false
     
     func getUser () {
         session.listen()
@@ -20,7 +19,9 @@ struct ContentView: View {
     var body: some View {
         Group {
             if (session.session != nil) {
-                BoardView().environmentObject(session)
+                NavigationView {
+                    BoardPickerView()
+                }
                 
             } else {
                 AuthView()

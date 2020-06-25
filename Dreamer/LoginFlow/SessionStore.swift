@@ -60,6 +60,7 @@ class SessionStore : ObservableObject {
         Auth.auth().signIn(withEmail: email, password: password, completion: handler)
     }
     
+    
     func signOut () {
         do {
             try Auth.auth().signOut()
