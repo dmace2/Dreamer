@@ -34,27 +34,6 @@ struct BoardView: View {
                     .cornerRadius(5)
                 
             }
-//            List(viewModel.posts, id: \.postName) { post in
-//                NavigationLink(destination: BoardPostBuilderView(title: post.title, text: post.text, color: UIColor(red: CGFloat(post.color[0]), green: CGFloat(post.color[1]), blue: CGFloat(post.color[2]), alpha: 1), boardName: self.board.boardName, postName: post.postName)) {
-//                    VStack(alignment: .leading) {
-//                        Text(post.title)
-//                            .font(.title)
-//                            .padding(.horizontal, 5)
-//                        Text("Last Edited: \(post.timeStamp)")
-//                            .font(.subheadline)
-//                            .padding(.horizontal, 5)
-//                        Text(post.text)
-//                            .font(.body)
-//                            .padding(.horizontal, 5)
-//                            .lineLimit(5)
-//                    }
-//                }
-//                .padding(.vertical, 32)
-//                .padding(.horizontal, 20)
-//                .background(Color(red: post.color[0], green: post.color[1], blue: post.color[2]))
-//                .cornerRadius(5)
-//                .shadow(color: Color(.secondaryLabel), radius: 5)
-//            }
             List {
                 ForEach(viewModel.posts, id: \.postName) { post in
                     NavigationLink(destination: BoardPostBuilderView(title: post.title, text: post.text, color: UIColor(red: CGFloat(post.color[0]), green: CGFloat(post.color[1]), blue: CGFloat(post.color[2]), alpha: 1), boardName: self.board.boardName, postName: post.postName)) {
