@@ -1,17 +1,21 @@
 //
-//  BoardItem.swift
+//  Post.swift
 //  Dreamer
 //
-//  Created by Dylan Mace on 5/30/20.
+//  Created by Dylan Mace on 6/27/20.
 //  Copyright © 2020 Dylan Mace. All rights reserved.
 //
 
 import Foundation
-struct Board: Identifiable {
+import Firebase
+
+
+struct Post: Identifiable {
     var id: String = UUID().uuidString
+    var postName: String
     var title: String
     var text: String
     var color: [Double]
-    var timeStamp: Date
+    var timeStamp: String
     
 }

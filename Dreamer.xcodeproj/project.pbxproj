@@ -3,19 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5E4035A824066AF41B556DA7 /* Pods_Dreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614FB1839C23B48743F30BCC /* Pods_Dreamer.framework */; };
-		F01DA73924A5254B003071AB /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */; };
 		F01DA73B24A527CD003071AB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73A24A527CD003071AB /* MenuView.swift */; };
 		F01DA73D24A52884003071AB /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73C24A52884003071AB /* MenuRow.swift */; };
 		F01DA73F24A52ADD003071AB /* BoardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA73E24A52ADD003071AB /* BoardPickerView.swift */; };
 		F01DA74124A52CB4003071AB /* BoardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74024A52CB4003071AB /* BoardContainerView.swift */; };
 		F01DA74324A53D0A003071AB /* BoardPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */; };
-		F01DA74524A542CC003071AB /* BoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74424A542CC003071AB /* BoardBuilder.swift */; };
 		F01DA74724A548F7003071AB /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DA74624A548F7003071AB /* TextView.swift */; };
+		F0342F7A24A7C2CF008A4CF3 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0342F7924A7C2CF008A4CF3 /* BoardView.swift */; };
+		F0342F7C24A7C32F008A4CF3 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0342F7B24A7C32F008A4CF3 /* BoardViewModel.swift */; };
+		F0342F7E24A7C5CD008A4CF3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0342F7D24A7C5CD008A4CF3 /* Post.swift */; };
+		F0342F8024A7CB34008A4CF3 /* BoardPostBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0342F7F24A7CB34008A4CF3 /* BoardPostBuilderView.swift */; };
 		F04CA75A24819DBD007A455E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75924819DBD007A455E /* AuthView.swift */; };
 		F04CA75C2481AC01007A455E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75B2481AC01007A455E /* SignUpView.swift */; };
 		F04CA75E2481AC3B007A455E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04CA75D2481AC3B007A455E /* SignInView.swift */; };
@@ -29,20 +31,24 @@
 		F0AAB9EC2481981B00767F48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0AAB9EB2481981B00767F48 /* GoogleService-Info.plist */; };
 		F0AAB9EF248199FB00767F48 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAB9EE248199FB00767F48 /* SessionStore.swift */; };
 		F0AAB9F124819A7400767F48 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAB9F024819A7400767F48 /* User.swift */; };
+		F0E1996324A7B17E0016417C /* BoardBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E1996224A7B17E0016417C /* BoardBuilderView.swift */; };
+		F0E1996624A7B5B90016417C /* ColorPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F0E1996524A7B5B90016417C /* ColorPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		614FB1839C23B48743F30BCC /* Pods_Dreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84762862102EFA4A8F6FE2AE /* Pods-Dreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.debug.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.debug.xcconfig"; sourceTree = "<group>"; };
 		BE296AE60E4308F58F139DE0 /* Pods-Dreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.release.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.release.xcconfig"; sourceTree = "<group>"; };
-		F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
 		F01DA73A24A527CD003071AB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		F01DA73C24A52884003071AB /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		F01DA73E24A52ADD003071AB /* BoardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPickerView.swift; sourceTree = "<group>"; };
 		F01DA74024A52CB4003071AB /* BoardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContainerView.swift; sourceTree = "<group>"; };
 		F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPickerViewModel.swift; sourceTree = "<group>"; };
-		F01DA74424A542CC003071AB /* BoardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBuilder.swift; sourceTree = "<group>"; };
 		F01DA74624A548F7003071AB /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		F0342F7924A7C2CF008A4CF3 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		F0342F7B24A7C32F008A4CF3 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		F0342F7D24A7C5CD008A4CF3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F0342F7F24A7CB34008A4CF3 /* BoardPostBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPostBuilderView.swift; sourceTree = "<group>"; };
 		F04CA75924819DBD007A455E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		F04CA75B2481AC01007A455E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F04CA75D2481AC3B007A455E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 		F0AAB9EB2481981B00767F48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0AAB9EE248199FB00767F48 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		F0AAB9F024819A7400767F48 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F0E1996224A7B17E0016417C /* BoardBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBuilderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E1996624A7B5B90016417C /* ColorPicker in Frameworks */,
 				5E4035A824066AF41B556DA7 /* Pods_Dreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,12 +98,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F01DA73724A5252E003071AB /* SignInWithAppleFlow */ = {
+		F0342F7824A7C2A9008A4CF3 /* BoardEditerFlow */ = {
 			isa = PBXGroup;
 			children = (
-				F01DA73824A5254B003071AB /* SignInWithAppleButton.swift */,
+				F0342F7924A7C2CF008A4CF3 /* BoardView.swift */,
+				F0342F7B24A7C32F008A4CF3 /* BoardViewModel.swift */,
+				F0342F7D24A7C5CD008A4CF3 /* Post.swift */,
+				F0342F7F24A7CB34008A4CF3 /* BoardPostBuilderView.swift */,
 			);
-			path = SignInWithAppleFlow;
+			path = BoardEditerFlow;
 			sourceTree = "<group>";
 		};
 		F04CA7642481B98E007A455E /* MenuFlow */ = {
@@ -107,16 +118,16 @@
 			path = MenuFlow;
 			sourceTree = "<group>";
 		};
-		F04CA7692481D939007A455E /* BoardFlow */ = {
+		F04CA7692481D939007A455E /* BoardPickerFlow */ = {
 			isa = PBXGroup;
 			children = (
-				F076F20B2482BBB500D7F26D /* Board.swift */,
 				F01DA73E24A52ADD003071AB /* BoardPickerView.swift */,
-				F01DA74024A52CB4003071AB /* BoardContainerView.swift */,
 				F01DA74224A53D0A003071AB /* BoardPickerViewModel.swift */,
-				F01DA74424A542CC003071AB /* BoardBuilder.swift */,
+				F076F20B2482BBB500D7F26D /* Board.swift */,
+				F0E1996224A7B17E0016417C /* BoardBuilderView.swift */,
+				F01DA74024A52CB4003071AB /* BoardContainerView.swift */,
 			);
-			path = BoardFlow;
+			path = BoardPickerFlow;
 			sourceTree = "<group>";
 		};
 		F0AAB9CB2481975C00767F48 = {
@@ -143,10 +154,10 @@
 			children = (
 				F04CA75F2481AE70007A455E /* Dreamer.entitlements */,
 				F04CA7672481D837007A455E /* ContentView.swift */,
-				F01DA73724A5252E003071AB /* SignInWithAppleFlow */,
 				F0AAB9ED2481994700767F48 /* LoginFlow */,
 				F04CA7642481B98E007A455E /* MenuFlow */,
-				F04CA7692481D939007A455E /* BoardFlow */,
+				F0342F7824A7C2A9008A4CF3 /* BoardEditerFlow */,
+				F04CA7692481D939007A455E /* BoardPickerFlow */,
 				F0AAB9EB2481981B00767F48 /* GoogleService-Info.plist */,
 				F0AAB9D72481975C00767F48 /* AppDelegate.swift */,
 				F0AAB9D92481975C00767F48 /* SceneDelegate.swift */,
@@ -197,6 +208,9 @@
 			dependencies = (
 			);
 			name = Dreamer;
+			packageProductDependencies = (
+				F0E1996524A7B5B90016417C /* ColorPicker */,
+			);
 			productName = Dreamer;
 			productReference = F0AAB9D42481975C00767F48 /* Dreamer.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +239,9 @@
 				Base,
 			);
 			mainGroup = F0AAB9CB2481975C00767F48;
+			packageReferences = (
+				F0E1996424A7B5B80016417C /* XCRemoteSwiftPackageReference "ColorPicker" */,
+			);
 			productRefGroup = F0AAB9D52481975C00767F48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,21 +314,24 @@
 			files = (
 				F0AAB9D82481975C00767F48 /* AppDelegate.swift in Sources */,
 				F0AAB9DA2481975C00767F48 /* SceneDelegate.swift in Sources */,
+				F0E1996324A7B17E0016417C /* BoardBuilderView.swift in Sources */,
 				F04CA75A24819DBD007A455E /* AuthView.swift in Sources */,
 				F076F20C2482BBB500D7F26D /* Board.swift in Sources */,
 				F04CA7682481D837007A455E /* ContentView.swift in Sources */,
-				F01DA74524A542CC003071AB /* BoardBuilder.swift in Sources */,
+				F0342F8024A7CB34008A4CF3 /* BoardPostBuilderView.swift in Sources */,
 				F01DA73B24A527CD003071AB /* MenuView.swift in Sources */,
+				F0342F7C24A7C32F008A4CF3 /* BoardViewModel.swift in Sources */,
 				F04CA75C2481AC01007A455E /* SignUpView.swift in Sources */,
 				F01DA74124A52CB4003071AB /* BoardContainerView.swift in Sources */,
-				F01DA73924A5254B003071AB /* SignInWithAppleButton.swift in Sources */,
 				F01DA73F24A52ADD003071AB /* BoardPickerView.swift in Sources */,
 				F01DA74724A548F7003071AB /* TextView.swift in Sources */,
 				F01DA74324A53D0A003071AB /* BoardPickerViewModel.swift in Sources */,
 				F01DA73D24A52884003071AB /* MenuRow.swift in Sources */,
+				F0342F7A24A7C2CF008A4CF3 /* BoardView.swift in Sources */,
 				F0AAB9EF248199FB00767F48 /* SessionStore.swift in Sources */,
 				F0AAB9F124819A7400767F48 /* User.swift in Sources */,
 				F04CA75E2481AC3B007A455E /* SignInView.swift in Sources */,
+				F0342F7E24A7C5CD008A4CF3 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +531,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0E1996424A7B5B80016417C /* XCRemoteSwiftPackageReference "ColorPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hendriku/ColorPicker";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0E1996524A7B5B90016417C /* ColorPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0E1996424A7B5B80016417C /* XCRemoteSwiftPackageReference "ColorPicker" */;
+			productName = ColorPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0AAB9CC2481975C00767F48 /* Project object */;
 }
