@@ -83,6 +83,16 @@ class BoardViewModel: ObservableObject {
         
     }
     
+    func deleteData(boardName: String, postName: String) {
+        db.collection("boards").document(boardName).collection("posts").document(postName).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
+    
     private func formatDate(date: Date?) -> String? {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

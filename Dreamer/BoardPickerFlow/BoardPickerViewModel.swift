@@ -57,7 +57,16 @@ class BoardPickerViewModel: ObservableObject {
                 let newBoard = Board(boardName: ref!.documentID, title: title,  color: [Double(color.redComponent), Double(color.greenComponent), Double(color.blueComponent)], timeStamp: strdate ?? "Unknown Date")
             }
         }
-        
+    }
+    
+    func deleteData(boardName: String) {
+        db.collection("boards").document(boardName).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
     }
     
     private func formatDate(date: Date?) -> String? {

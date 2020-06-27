@@ -12,6 +12,14 @@ struct BoardPickerView: View {
     //@Binding var showMenu: Bool
     @ObservedObject var viewModel = BoardPickerViewModel()
     
+    func delete(at offsets: IndexSet) {
+        for index in offsets {
+            viewModel.deleteData(boardName: viewModel.boards[index].boardName)
+        }
+        //users.remove(atOffsets: offsets)
+        print("deleting")
+    }
+    
     
     var body: some View {
         VStack(spacing: 18) {
@@ -26,23 +34,25 @@ struct BoardPickerView: View {
                     .cornerRadius(5)
                 
             }
-            List(viewModel.boards, id: \.boardName) { board in
-//                NavigationLink(destination: BoardBuilder(title: board.title, text: "foo")) {
-                NavigationLink(destination: BoardView(board: board)) {
-                    VStack(alignment: .leading) {
-                        Text(board.title)
-                            .font(.title)
-                            .padding(.horizontal, 5)
-                        Text("Last Edited: \(board.timeStamp)")
-                            .font(.subheadline)
-                            .padding(.horizontal, 5)
+            List {
+                ForEach(viewModel.boards, id: \.boardName) { board in
+                    NavigationLink(destination: BoardView(board: board)) {
+                        VStack(alignment: .leading) {
+                            Text(board.title)
+                                .font(.title)
+                                .padding(.horizontal, 5)
+                            Text("Last Edited: \(board.timeStamp)")
+                                .font(.subheadline)
+                                .padding(.horizontal, 5)
+                        }
                     }
+                    .padding(.vertical, 32)
+                    .padding(.horizontal, 20)
+                    .background(Color(red: board.color[0], green: board.color[1], blue: board.color[2]))
+                    .cornerRadius(5)
+                    .shadow(color: Color(.secondaryLabel), radius: 5)
                 }
-                .padding(.vertical, 32)
-                .padding(.horizontal, 20)
-                .background(Color(red: board.color[0], green: board.color[1], blue: board.color[2]))
-                .cornerRadius(5)
-                .shadow(color: Color(.secondaryLabel), radius: 5)
+                .onDelete(perform: delete)
             }
             .onAppear() {
                 UITableView.appearance().separatorStyle = .none

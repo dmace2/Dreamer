@@ -32,7 +32,7 @@ struct SignUpView: View {
         VStack {
             Text("Create an Account")
                 .font(.system(size: 32, weight: .heavy))
-                .foregroundColor(Color("Gold"))
+                .foregroundColor(Color(.systemBlue))
             Text("Sign up to get started")
                 .font(.system(size: 18))
             
@@ -66,7 +66,7 @@ struct SignUpView: View {
                     .frame(height: 50)
                     .foregroundColor(Color(.white))
                     .font(.system(size: 14, weight: .bold))
-                    .background(LinearGradient(gradient: Gradient(colors: [Color("Gold"), Color("Navy")]), startPoint: .leading, endPoint: .trailing))
+                    .background(Color(.systemBlue))
                 .cornerRadius(5)
             }
             

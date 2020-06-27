@@ -30,7 +30,7 @@ struct SignInView : View {
         VStack {
             Text("Welcome Back!")
                 .font(.system(size: 32, weight: .heavy))
-                .foregroundColor(Color("Gold"))
+                .foregroundColor(Color(.systemBlue))
             Text("Sign in to continue")
                 .font(.system(size: 18))
             
@@ -53,7 +53,7 @@ struct SignInView : View {
                     .frame(height: 50)
                     .foregroundColor(Color(.white))
                     .font(.system(size: 14, weight: .bold))
-                    .background(LinearGradient(gradient: Gradient(colors: [Color("Gold"), Color("Navy")]), startPoint: .leading, endPoint: .trailing))
+                    .background(Color(.systemBlue))
                 .cornerRadius(5)
             }
             
@@ -73,11 +73,12 @@ struct SignInView : View {
                         .foregroundColor(Color(.label))
                     Text("Create One Here!")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(Color("Gold"))
+                    .foregroundColor(Color(.systemBlue))
                 }
             }
         }
         .padding(.horizontal, 32)
+        .padding(.vertical, 10)
         
     }
 }

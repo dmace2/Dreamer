@@ -20,8 +20,12 @@ struct BoardBuilderView: View {
     func saveData(title: String, color: UIColor) -> () -> () {
         return {
             self.viewModel.saveData(title: title, color: color)
-            self.presentationMode.wrappedValue.dismiss()
+            self.dismissView()
         }
+    }
+    
+    func dismissView() {
+        self.presentationMode.wrappedValue.dismiss()
     }
     
     var body: some View {
@@ -37,15 +41,26 @@ struct BoardBuilderView: View {
                 .frame(height: 200)
                 .shadow(color: Color(.secondaryLabel), radius: 5)
             Spacer()
-            Button(action: saveData(title: title, color: color)) {
-                Text("Save Message")
-                    
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .frame(height: 50)
-                    
-                    .font(.system(size: 14, weight: .bold))
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(5)
+            VStack(spacing: 18) {
+                Button(action: saveData(title: title, color: color)) {
+                    Text("Save Board")
+                        
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(height: 50)
+                        
+                        .font(.system(size: 14, weight: .bold))
+                        .background(Color(.secondarySystemBackground))
+                        .cornerRadius(5)
+                }
+                Button(action: dismissView) {
+                    Text("Discard Board")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(height: 50)
+                        .foregroundColor(Color(.systemRed))
+                        .font(.system(size: 14, weight: .bold))
+                        .background(Color(.secondarySystemBackground))
+                        .cornerRadius(5)
+                }
             }
         }
         .padding(32)
