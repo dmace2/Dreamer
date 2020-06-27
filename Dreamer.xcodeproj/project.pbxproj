@@ -109,6 +109,23 @@
 			path = BoardEditerFlow;
 			sourceTree = "<group>";
 		};
+		F0342F8124A7E115008A4CF3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F0AAB9D72481975C00767F48 /* AppDelegate.swift */,
+				F0AAB9D92481975C00767F48 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F0342F8224A7E126008A4CF3 /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				F01DA74624A548F7003071AB /* TextView.swift */,
+			);
+			path = "Custom UI Components";
+			sourceTree = "<group>";
+		};
 		F04CA7642481B98E007A455E /* MenuFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +169,8 @@
 		F0AAB9D62481975C00767F48 /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				F0342F8224A7E126008A4CF3 /* Custom UI Components */,
+				F0342F8124A7E115008A4CF3 /* Delegates */,
 				F04CA75F2481AE70007A455E /* Dreamer.entitlements */,
 				F04CA7672481D837007A455E /* ContentView.swift */,
 				F0AAB9ED2481994700767F48 /* LoginFlow */,
@@ -159,13 +178,10 @@
 				F0342F7824A7C2A9008A4CF3 /* BoardEditerFlow */,
 				F04CA7692481D939007A455E /* BoardPickerFlow */,
 				F0AAB9EB2481981B00767F48 /* GoogleService-Info.plist */,
-				F0AAB9D72481975C00767F48 /* AppDelegate.swift */,
-				F0AAB9D92481975C00767F48 /* SceneDelegate.swift */,
 				F0AAB9DD2481975D00767F48 /* Assets.xcassets */,
 				F0AAB9E22481975D00767F48 /* LaunchScreen.storyboard */,
 				F0AAB9E52481975D00767F48 /* Info.plist */,
 				F0AAB9DF2481975D00767F48 /* Preview Content */,
-				F01DA74624A548F7003071AB /* TextView.swift */,
 			);
 			path = Dreamer;
 			sourceTree = "<group>";
