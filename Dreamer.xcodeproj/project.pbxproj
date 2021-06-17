@@ -17,6 +17,8 @@
 		F0498293267A539F009FED59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0498292267A539F009FED59 /* Preview Assets.xcassets */; };
 		F049829B267A53C3009FED59 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049829A267A53C3009FED59 /* SignInView.swift */; };
 		F049829D267A545B009FED59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F049829C267A545B009FED59 /* GoogleService-Info.plist */; };
+		F0D6CDF9267BDAA400F32013 /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6CDF8267BDAA400F32013 /* UserSettingsView.swift */; };
+		F0D6CDFB267BDBC400F32013 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6CDFA267BDBC400F32013 /* SettingsViewModel.swift */; };
 		F0FCEFF2267AAD4A00774FD0 /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF1267AAD4A00774FD0 /* BoardListView.swift */; };
 		F0FCEFF4267AAD5500774FD0 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF3267AAD5500774FD0 /* Board.swift */; };
 		F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF5267AAD6100774FD0 /* BoardViewModel.swift */; };
@@ -47,6 +49,8 @@
 		F0498294267A539F009FED59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F049829A267A53C3009FED59 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F049829C267A545B009FED59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0D6CDF8267BDAA400F32013 /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
+		F0D6CDFA267BDBC400F32013 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F0FCEFF1267AAD4A00774FD0 /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
 		F0FCEFF3267AAD5500774FD0 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		F0FCEFF5267AAD6100774FD0 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		F049828A267A539E009FED59 /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				F0D6CDF7267BDA9700F32013 /* UserSettingsFlow */,
 				F0FCF00C267B98AE00774FD0 /* UserFlow */,
 				F0FCF001267AF7B000774FD0 /* BoardFlow */,
 				F00D949A267A87A100D61E82 /* CustomUIElements */,
@@ -146,6 +151,15 @@
 				F0498292267A539F009FED59 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0D6CDF7267BDA9700F32013 /* UserSettingsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F0D6CDF8267BDAA400F32013 /* UserSettingsView.swift */,
+				F0D6CDFA267BDBC400F32013 /* SettingsViewModel.swift */,
+			);
+			path = UserSettingsFlow;
 			sourceTree = "<group>";
 		};
 		F0FCEFF0267AAD3800774FD0 /* BoardPickerFlow */ = {
@@ -303,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D6CDF9267BDAA400F32013 /* UserSettingsView.swift in Sources */,
 				F0FCEFF8267AB3B500774FD0 /* BoardListCellView.swift in Sources */,
 				F0FCEFFA267AD6E500774FD0 /* BoardGeneratorView.swift in Sources */,
 				F049829B267A53C3009FED59 /* SignInView.swift in Sources */,
@@ -322,6 +337,7 @@
 				F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */,
 				F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */,
 				F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */,
+				F0D6CDFB267BDBC400F32013 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

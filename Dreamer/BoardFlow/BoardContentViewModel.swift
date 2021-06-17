@@ -12,7 +12,7 @@ import SwiftUI
 
 class BoardContentViewModel: ObservableObject {
     private var db = Firestore.firestore()
-    @Published var userList: [User] = []
+    @Published var editors: [User] = []
     
     func updateBoardSettings(id: String, name: String, color: Color, completion: @escaping (Error?) -> Void) {
         let (r,g,b,o) = color.components
@@ -29,7 +29,7 @@ class BoardContentViewModel: ObservableObject {
         }
     }
     
-    func getAuthorizedUserIDs(from boardID: String) {
+    func getAuthorizedUsers(from boardID: String) {
         db.collection("boards").document(boardID).getDocument(completion: { (document, error ) in
             if let document = document, document.exists {
                 let dataDescription = document.data()
@@ -41,8 +41,8 @@ class BoardContentViewModel: ObservableObject {
                                 print(error.localizedDescription)
                             } else {
                                 print(user)
-                                if !self.userList.contains(user) {
-                                    self.userList.append(user)
+                                if !self.editors.contains(user) {
+                                    self.editors.append(user)
                                 }
                             }
                         })
@@ -52,8 +52,6 @@ class BoardContentViewModel: ObservableObject {
                 print("Document does not exist")
             }
         })
-        
-        
     }
     
     func getUserInfoFromID(_ id: String, completion: @escaping (User, Error?) -> Void) {
@@ -79,7 +77,8 @@ class BoardContentViewModel: ObservableObject {
     
     func removeUserFromBoard(at indices: IndexSet, boardID: String) {
         indices.sorted(by: > ).forEach { index in
-            let removedUser = userList.remove(at: index)
+            print("Index \(index)")
+            let removedUser = editors[index]//userList.remove(at: index)
             db.collection("boards").document(boardID).updateData([
                 "users": FieldValue.arrayRemove([removedUser.id])
             ])

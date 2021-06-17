@@ -14,6 +14,7 @@ class BoardViewModel: ObservableObject {
     private var db = Firestore.firestore()
     @Published var boards = [Board]()
     
+    
     // code to fetch data
     func fetchData() {
         //        db.collection("boards").addSnapshotListener { (querySnapshot, error) in

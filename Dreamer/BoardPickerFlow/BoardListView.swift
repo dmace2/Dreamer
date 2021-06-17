@@ -38,17 +38,6 @@ struct BoardListView: View {
                 .alert(isPresented: $showingAlert) {
                     Alert(title: Text("Error Deleting Board"), message: Text(alertText))
                 }
-                .toolbar {
-                    //                    Button(action: {
-                    //                        showNewBoardView.toggle()
-                    //                    }, label: {
-                    //                        Image(systemName: "plus")
-                    //                    })
-                    NavigationLink(destination: BoardGeneratorView(id: UUID().uuidString), label: {
-                        Image(systemName: "plus")
-                    })
-                        .animation(.easeInOut(duration: 0.3))
-                }
                 
                 Spacer()
                 Button(action: {
@@ -60,6 +49,14 @@ struct BoardListView: View {
             }
             
         }
+        .navigationBarItems(leading: NavigationLink(destination: UserSettingsView(),
+                                                    label: { Image(systemName: "gear")})
+                                     .animation(.easeInOut(duration: 0.3)),
+                            trailing:
+                                NavigationLink(destination: BoardGeneratorView(id: UUID().uuidString),
+                                               label: { Image(systemName: "plus")})
+                                .animation(.easeInOut(duration: 0.3))
+        )
         .navigationTitle("Boards")
     }
     

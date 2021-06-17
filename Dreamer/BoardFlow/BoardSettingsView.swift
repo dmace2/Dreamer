@@ -59,17 +59,20 @@ struct BoardSettingsView: View {
                 }
                 
                 Section(header: Text("Users")) {
-                    ForEach(viewModel.userList) { user in
+                    ForEach(viewModel.editors) { user in
                         UserView(user)
                             .deleteDisabled(viewModel.idMatch(user.id))
                         
                     }
                     .onDelete(perform: { indexSet in
                         self.viewModel.removeUserFromBoard(at: indexSet, boardID: board.id)
-                        self.viewModel.getAuthorizedUserIDs(from: board.id)
+                        self.viewModel.getAuthorizedUsers(from: board.id)
                     })
                 }
-                .onAppear() {self.viewModel.getAuthorizedUserIDs(from: board.id)}
+                .onAppear() {
+                    self.viewModel.getAuthorizedUsers(from: board.id)
+                    
+                }
                 
             }
             
