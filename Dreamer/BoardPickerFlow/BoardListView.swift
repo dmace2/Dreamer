@@ -22,7 +22,7 @@ struct BoardListView: View {
             VStack {
                 List {
                     ForEach(viewModel.boards) { board in
-                        NavigationLink(destination: BoardContentView(board), label: {
+                        NavigationLink(destination: BoardContentContainerView(board), label: {
                             ZStack {
                                 board.color.cornerRadius(10)
                                 BoardListCellView(board).padding()

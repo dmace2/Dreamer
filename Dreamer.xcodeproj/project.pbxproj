@@ -25,6 +25,8 @@
 		F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFFB267AECA200774FD0 /* ColorExtension.swift */; };
 		F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFFF267AF16700774FD0 /* ErrorAsString.swift */; };
 		F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF002267AF8B900774FD0 /* BoardContentView.swift */; };
+		F0FCF005267B7ECC00774FD0 /* BoardContentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */; };
+		F0FCF007267B7F9C00774FD0 /* BoardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		F0FCEFFB267AECA200774FD0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F0FCEFFF267AF16700774FD0 /* ErrorAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAsString.swift; sourceTree = "<group>"; };
 		F0FCF002267AF8B900774FD0 /* BoardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentView.swift; sourceTree = "<group>"; };
+		F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentContainerView.swift; sourceTree = "<group>"; };
+		F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSettingsView.swift; sourceTree = "<group>"; };
 		F2B76EFC96DF7B0675B42A10 /* Pods_Dreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				F0FCF002267AF8B900774FD0 /* BoardContentView.swift */,
+				F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */,
+				F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */,
 			);
 			path = BoardFlow;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				F00D948F267A5A9200D61E82 /* LoginModel.swift in Sources */,
 				F00D949C267A87BE00D61E82 /* NormalButton.swift in Sources */,
 				F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */,
+				F0FCF007267B7F9C00774FD0 /* BoardSettingsView.swift in Sources */,
 				F00D9491267A5D4500D61E82 /* LoginView.swift in Sources */,
 				F0FCEFF2267AAD4A00774FD0 /* BoardListView.swift in Sources */,
 				F049828C267A539E009FED59 /* DreamerApp.swift in Sources */,
 				F00D9494267A828600D61E82 /* SignInWithAppleView.swift in Sources */,
 				F0FCEFF4267AAD5500774FD0 /* Board.swift in Sources */,
+				F0FCF005267B7ECC00774FD0 /* BoardContentContainerView.swift in Sources */,
 				F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */,
 				F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */,
 				F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */,
@@ -433,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maceInc.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Boards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maceInc.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Boards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
