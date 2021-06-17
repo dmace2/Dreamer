@@ -12,17 +12,17 @@ struct LoginView: View {
     @EnvironmentObject var viewModel: LoginModel
     
     var body: some View {
-        NavigationView {
             ZStack {
                 if viewModel.isSignedIn {
-                    BoardListView()
-                        .navigationTitle("Content")
+                    NavigationView{
+                        BoardListView()
+                            .navigationTitle("Content")
+                    }
+                        .navigationViewStyle(.automatic)
                 } else {
                     SignInView()
                 }
             }
-        }
-        
         .onAppear {
             viewModel.signedIn = viewModel.isSignedIn //computed property
         }

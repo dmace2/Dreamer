@@ -38,14 +38,6 @@ struct BoardListView: View {
                 .alert(isPresented: $showingAlert) {
                     Alert(title: Text("Error Deleting Board"), message: Text(alertText))
                 }
-                
-                Spacer()
-                Button(action: {
-                    loginModel.signOut()
-                }, label: {
-                    Text("Sign Out")
-                })
-                    .buttonStyle(NormalButtonStyle())
             }
             
         }
