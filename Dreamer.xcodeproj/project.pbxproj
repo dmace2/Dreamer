@@ -27,6 +27,9 @@
 		F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF002267AF8B900774FD0 /* BoardContentView.swift */; };
 		F0FCF005267B7ECC00774FD0 /* BoardContentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */; };
 		F0FCF007267B7F9C00774FD0 /* BoardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */; };
+		F0FCF009267B8A8C00774FD0 /* BoardContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF008267B8A8C00774FD0 /* BoardContentViewModel.swift */; };
+		F0FCF00B267B904F00774FD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF00A267B904F00774FD0 /* User.swift */; };
+		F0FCF00E267B98BD00774FD0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF00D267B98BD00774FD0 /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		F0FCF002267AF8B900774FD0 /* BoardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentView.swift; sourceTree = "<group>"; };
 		F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentContainerView.swift; sourceTree = "<group>"; };
 		F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSettingsView.swift; sourceTree = "<group>"; };
+		F0FCF008267B8A8C00774FD0 /* BoardContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentViewModel.swift; sourceTree = "<group>"; };
+		F0FCF00A267B904F00774FD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F0FCF00D267B98BD00774FD0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F2B76EFC96DF7B0675B42A10 /* Pods_Dreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,7 @@
 		F049828A267A539E009FED59 /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				F0FCF00C267B98AE00774FD0 /* UserFlow */,
 				F0FCF001267AF7B000774FD0 /* BoardFlow */,
 				F00D949A267A87A100D61E82 /* CustomUIElements */,
 				F0FCEFF0267AAD3800774FD0 /* BoardPickerFlow */,
@@ -159,8 +166,18 @@
 				F0FCF002267AF8B900774FD0 /* BoardContentView.swift */,
 				F0FCF004267B7ECC00774FD0 /* BoardContentContainerView.swift */,
 				F0FCF006267B7F9C00774FD0 /* BoardSettingsView.swift */,
+				F0FCF008267B8A8C00774FD0 /* BoardContentViewModel.swift */,
 			);
 			path = BoardFlow;
+			sourceTree = "<group>";
+		};
+		F0FCF00C267B98AE00774FD0 /* UserFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F0FCF00A267B904F00774FD0 /* User.swift */,
+				F0FCF00D267B98BD00774FD0 /* UserView.swift */,
+			);
+			path = UserFlow;
 			sourceTree = "<group>";
 		};
 		FEEDF61CCF32A8A960B1002D /* Pods */ = {
@@ -289,6 +306,7 @@
 				F0FCEFF8267AB3B500774FD0 /* BoardListCellView.swift in Sources */,
 				F0FCEFFA267AD6E500774FD0 /* BoardGeneratorView.swift in Sources */,
 				F049829B267A53C3009FED59 /* SignInView.swift in Sources */,
+				F0FCF00E267B98BD00774FD0 /* UserView.swift in Sources */,
 				F00D948F267A5A9200D61E82 /* LoginModel.swift in Sources */,
 				F00D949C267A87BE00D61E82 /* NormalButton.swift in Sources */,
 				F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */,
@@ -297,8 +315,10 @@
 				F0FCEFF2267AAD4A00774FD0 /* BoardListView.swift in Sources */,
 				F049828C267A539E009FED59 /* DreamerApp.swift in Sources */,
 				F00D9494267A828600D61E82 /* SignInWithAppleView.swift in Sources */,
+				F0FCF009267B8A8C00774FD0 /* BoardContentViewModel.swift in Sources */,
 				F0FCEFF4267AAD5500774FD0 /* Board.swift in Sources */,
 				F0FCF005267B7ECC00774FD0 /* BoardContentContainerView.swift in Sources */,
+				F0FCF00B267B904F00774FD0 /* User.swift in Sources */,
 				F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */,
 				F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */,
 				F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */,

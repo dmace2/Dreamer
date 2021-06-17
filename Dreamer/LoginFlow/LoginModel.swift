@@ -28,7 +28,6 @@ class LoginModel: ObservableObject {
             }
             print("success")
             DispatchQueue.main.async {
-                self.createUserData()
                 withAnimation {
                     self.signedIn = true
                 }
@@ -36,14 +35,15 @@ class LoginModel: ObservableObject {
         })
     }
     
-    func signIn(with credential: OAuthCredential, completion: @escaping (Error?) -> Void) {
+    func signIn(with credential: OAuthCredential, name: String?, completion: @escaping (Error?) -> Void) {
         auth.signIn(with: credential) { (authResult, error) in
             if (error != nil) {
                 completion(error)
                 return
             }
+           
             DispatchQueue.main.async {
-                self.createUserData()
+                self.createUserData(with: name)
                 withAnimation {
                     self.signedIn = true
                 }
@@ -51,14 +51,17 @@ class LoginModel: ObservableObject {
         }
     }
     
-    func signUp(email: String, password:String, completion: @escaping (Error?) -> Void) {
+    func signUp(name: String, email: String, password:String, completion: @escaping (Error?) -> Void) {
         auth.createUser(withEmail: email, password: password, completion: {result, error in
             if (error != nil) {
                 completion(error)
                 return
             }
             DispatchQueue.main.async {
-                self.createUserData()
+                let changeRequest = self.auth.currentUser!.createProfileChangeRequest()
+                changeRequest.displayName = name
+                
+                self.createUserData(with: name)
                 withAnimation {
                     self.signedIn = true
                 }
@@ -73,18 +76,27 @@ class LoginModel: ObservableObject {
         }
     }
     
-    func createUserData() {
+    func createUserData( with name: String?) {
         if let user = auth.currentUser {
-            db.collection("users").document(user.uid).setData([
-                "name": user.displayName ?? "Unknown Name",
-                "email": user.email ?? "unknown@unknown.com",
-            ], merge: true) { err in
-                if let err = err {
-                    print("Error writing document: \(err)")
+            //get curent user data to see if name is already set
+            db.collection("users").document(user.uid).getDocument(completion: { (document, error) in
+                if let document = document, document.exists {
+                    return //don't write if document exists
                 } else {
-                    print("Document successfully written!")
+                    self.db.collection("users").document(user.uid).setData([
+                        "name": name ?? "Not Set",
+                        "email": user.email ?? "unknown@unknown.com",
+                    ], merge: true) { err in
+                        if let err = err {
+                            print("Error writing document: \(err)")
+                        } else {
+                            print("Document successfully written!")
+                        }
+                    }
                 }
-            }
+            })
+            
+            
         } else {
         }
     }

@@ -91,9 +91,12 @@ struct CustomSignInWithAppleButton: View {
                         }
                         
                         let credential = OAuthProvider.credential(withProviderID: "apple.com",idToken: idTokenString,rawNonce: nonce)
-                        loginModel.signIn(with: credential, completion: errorHandle)
                         
-                        print("\(String(describing: Auth.auth().currentUser?.uid))")
+                        var name: String? 
+                        if appleIDCredential.fullName?.givenName != nil && appleIDCredential.fullName?.familyName != nil {
+                            name = "\(appleIDCredential.fullName!.givenName!) \(appleIDCredential.fullName!.familyName!)"
+                        }
+                        loginModel.signIn(with: credential, name: name, completion: errorHandle)
                     default:
                         break
                         

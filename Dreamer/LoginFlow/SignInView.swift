@@ -11,6 +11,8 @@ struct SignInView: View {
     @State var email = ""
     @State var password = ""
     @State var secondaryPassword = ""
+    @State var firstname = ""
+    @State var lastname = ""
     
     @EnvironmentObject private var viewModel: LoginModel
     
@@ -28,6 +30,16 @@ struct SignInView: View {
                 .foregroundColor(Color(.systemBlue))
             Spacer()
             VStack {
+                if signUp {
+                    TextField("First Name:",text: $firstname)
+                        .padding()
+                        .background(Color(.secondarySystemFill))
+                        .cornerRadius(5)
+                    TextField("Last Name:",text: $lastname)
+                        .padding()
+                        .background(Color(.secondarySystemFill))
+                        .cornerRadius(5)
+                }
                 TextField("Email:",text: $email)
                     .keyboardType(.emailAddress)
                     .disableAutocorrection(true)
@@ -71,11 +83,11 @@ struct SignInView: View {
                 
                 if signUp {
                     Button(action: {
-                        guard !email.isEmpty && !password.isEmpty && password == secondaryPassword else {
+                        guard !firstname.isEmpty && !lastname.isEmpty && !email.isEmpty && !password.isEmpty && password == secondaryPassword else {
                             return
                         }
                         
-                        viewModel.signUp(email: email, password: password, completion: { error in
+                        viewModel.signUp(name: "\(firstname) \(lastname)", email: email, password: password, completion: { error in
                             if let e = error {
                                 alertText = e.localizedDescription
                                 showingAlert = true
