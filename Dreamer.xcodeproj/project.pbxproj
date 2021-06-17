@@ -3,23 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDD86557932CDFA341F45A3A /* Pods_Dreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B76EFC96DF7B0675B42A10 /* Pods_Dreamer.framework */; };
+		F00D948F267A5A9200D61E82 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D948E267A5A9200D61E82 /* LoginModel.swift */; };
+		F00D9491267A5D4500D61E82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9490267A5D4500D61E82 /* LoginView.swift */; };
+		F00D9494267A828600D61E82 /* SignInWithAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D9493267A828600D61E82 /* SignInWithAppleView.swift */; };
+		F00D949C267A87BE00D61E82 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D949B267A87BE00D61E82 /* NormalButton.swift */; };
 		F049828C267A539E009FED59 /* DreamerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049828B267A539E009FED59 /* DreamerApp.swift */; };
-		F049828E267A539E009FED59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049828D267A539E009FED59 /* ContentView.swift */; };
 		F0498290267A539F009FED59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F049828F267A539F009FED59 /* Assets.xcassets */; };
 		F0498293267A539F009FED59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0498292267A539F009FED59 /* Preview Assets.xcassets */; };
+		F049829B267A53C3009FED59 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F049829A267A53C3009FED59 /* SignInView.swift */; };
+		F049829D267A545B009FED59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F049829C267A545B009FED59 /* GoogleService-Info.plist */; };
+		F0FCEFF2267AAD4A00774FD0 /* BoardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF1267AAD4A00774FD0 /* BoardListView.swift */; };
+		F0FCEFF4267AAD5500774FD0 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF3267AAD5500774FD0 /* Board.swift */; };
+		F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF5267AAD6100774FD0 /* BoardViewModel.swift */; };
+		F0FCEFF8267AB3B500774FD0 /* BoardListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF7267AB3B500774FD0 /* BoardListCellView.swift */; };
+		F0FCEFFA267AD6E500774FD0 /* BoardGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFF9267AD6E500774FD0 /* BoardGeneratorView.swift */; };
+		F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFFB267AECA200774FD0 /* ColorExtension.swift */; };
+		F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCEFFF267AF16700774FD0 /* ErrorAsString.swift */; };
+		F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FCF002267AF8B900774FD0 /* BoardContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225575D317387066AD37C42E /* Pods-Dreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.release.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.release.xcconfig"; sourceTree = "<group>"; };
+		D832FDBAE65507CFAF34F851 /* Pods-Dreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dreamer.debug.xcconfig"; path = "Target Support Files/Pods-Dreamer/Pods-Dreamer.debug.xcconfig"; sourceTree = "<group>"; };
+		F00D948E267A5A9200D61E82 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F00D9490267A5D4500D61E82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F00D9492267A813800D61E82 /* Dreamer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dreamer.entitlements; sourceTree = "<group>"; };
+		F00D9493267A828600D61E82 /* SignInWithAppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleView.swift; sourceTree = "<group>"; };
+		F00D949B267A87BE00D61E82 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		F0498288267A539E009FED59 /* Dreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F049828B267A539E009FED59 /* DreamerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerApp.swift; sourceTree = "<group>"; };
-		F049828D267A539E009FED59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F049828F267A539F009FED59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0498292267A539F009FED59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0498294267A539F009FED59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F049829A267A53C3009FED59 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F049829C267A545B009FED59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0FCEFF1267AAD4A00774FD0 /* BoardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListView.swift; sourceTree = "<group>"; };
+		F0FCEFF3267AAD5500774FD0 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		F0FCEFF5267AAD6100774FD0 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		F0FCEFF7267AB3B500774FD0 /* BoardListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListCellView.swift; sourceTree = "<group>"; };
+		F0FCEFF9267AD6E500774FD0 /* BoardGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGeneratorView.swift; sourceTree = "<group>"; };
+		F0FCEFFB267AECA200774FD0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F0FCEFFF267AF16700774FD0 /* ErrorAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAsString.swift; sourceTree = "<group>"; };
+		F0FCF002267AF8B900774FD0 /* BoardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardContentView.swift; sourceTree = "<group>"; };
+		F2B76EFC96DF7B0675B42A10 /* Pods_Dreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +58,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD86557932CDFA341F45A3A /* Pods_Dreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D67560C18810B85385CCE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B76EFC96DF7B0675B42A10 /* Pods_Dreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00D948D267A5A8000D61E82 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F049829A267A53C3009FED59 /* SignInView.swift */,
+				F00D948E267A5A9200D61E82 /* LoginModel.swift */,
+				F00D9490267A5D4500D61E82 /* LoginView.swift */,
+				F00D9493267A828600D61E82 /* SignInWithAppleView.swift */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		F00D949A267A87A100D61E82 /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				F00D949B267A87BE00D61E82 /* NormalButton.swift */,
+				F0FCEFFB267AECA200774FD0 /* ColorExtension.swift */,
+				F0FCEFFF267AF16700774FD0 /* ErrorAsString.swift */,
+			);
+			path = CustomUIElements;
+			sourceTree = "<group>";
+		};
 		F049827F267A539E009FED59 = {
 			isa = PBXGroup;
 			children = (
 				F049828A267A539E009FED59 /* Dreamer */,
 				F0498289267A539E009FED59 /* Products */,
+				FEEDF61CCF32A8A960B1002D /* Pods */,
+				4D67560C18810B85385CCE6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +115,13 @@
 		F049828A267A539E009FED59 /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
+				F0FCF001267AF7B000774FD0 /* BoardFlow */,
+				F00D949A267A87A100D61E82 /* CustomUIElements */,
+				F0FCEFF0267AAD3800774FD0 /* BoardPickerFlow */,
+				F00D948D267A5A8000D61E82 /* LoginFlow */,
+				F049829C267A545B009FED59 /* GoogleService-Info.plist */,
 				F049828B267A539E009FED59 /* DreamerApp.swift */,
-				F049828D267A539E009FED59 /* ContentView.swift */,
+				F00D9492267A813800D61E82 /* Dreamer.entitlements */,
 				F049828F267A539F009FED59 /* Assets.xcassets */,
 				F0498294267A539F009FED59 /* Info.plist */,
 				F0498291267A539F009FED59 /* Preview Content */,
@@ -69,6 +137,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F0FCEFF0267AAD3800774FD0 /* BoardPickerFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F0FCEFF1267AAD4A00774FD0 /* BoardListView.swift */,
+				F0FCEFF3267AAD5500774FD0 /* Board.swift */,
+				F0FCEFF5267AAD6100774FD0 /* BoardViewModel.swift */,
+				F0FCEFF7267AB3B500774FD0 /* BoardListCellView.swift */,
+				F0FCEFF9267AD6E500774FD0 /* BoardGeneratorView.swift */,
+			);
+			path = BoardPickerFlow;
+			sourceTree = "<group>";
+		};
+		F0FCF001267AF7B000774FD0 /* BoardFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F0FCF002267AF8B900774FD0 /* BoardContentView.swift */,
+			);
+			path = BoardFlow;
+			sourceTree = "<group>";
+		};
+		FEEDF61CCF32A8A960B1002D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D832FDBAE65507CFAF34F851 /* Pods-Dreamer.debug.xcconfig */,
+				225575D317387066AD37C42E /* Pods-Dreamer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0498297267A539F009FED59 /* Build configuration list for PBXNativeTarget "Dreamer" */;
 			buildPhases = (
+				B94384BFEB327257415B3943 /* [CP] Check Pods Manifest.lock */,
 				F0498284267A539E009FED59 /* Sources */,
 				F0498285267A539E009FED59 /* Frameworks */,
 				F0498286267A539E009FED59 /* Resources */,
+				419A9F582F93FEB87ECD0181 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,18 +227,73 @@
 			files = (
 				F0498293267A539F009FED59 /* Preview Assets.xcassets in Resources */,
 				F0498290267A539F009FED59 /* Assets.xcassets in Resources */,
+				F049829D267A545B009FED59 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		419A9F582F93FEB87ECD0181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dreamer/Pods-Dreamer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dreamer/Pods-Dreamer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dreamer/Pods-Dreamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94384BFEB327257415B3943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dreamer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0498284267A539E009FED59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F049828E267A539E009FED59 /* ContentView.swift in Sources */,
+				F0FCEFF8267AB3B500774FD0 /* BoardListCellView.swift in Sources */,
+				F0FCEFFA267AD6E500774FD0 /* BoardGeneratorView.swift in Sources */,
+				F049829B267A53C3009FED59 /* SignInView.swift in Sources */,
+				F00D948F267A5A9200D61E82 /* LoginModel.swift in Sources */,
+				F00D949C267A87BE00D61E82 /* NormalButton.swift in Sources */,
+				F0FCF003267AF8B900774FD0 /* BoardContentView.swift in Sources */,
+				F00D9491267A5D4500D61E82 /* LoginView.swift in Sources */,
+				F0FCEFF2267AAD4A00774FD0 /* BoardListView.swift in Sources */,
 				F049828C267A539E009FED59 /* DreamerApp.swift in Sources */,
+				F00D9494267A828600D61E82 /* SignInWithAppleView.swift in Sources */,
+				F0FCEFF4267AAD5500774FD0 /* Board.swift in Sources */,
+				F0FCEFF6267AAD6100774FD0 /* BoardViewModel.swift in Sources */,
+				F0FCEFFC267AECA200774FD0 /* ColorExtension.swift in Sources */,
+				F0FCF000267AF16700774FD0 /* ErrorAsString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +418,11 @@
 		};
 		F0498298267A539F009FED59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D832FDBAE65507CFAF34F851 /* Pods-Dreamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dreamer/Dreamer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dreamer/Preview Content\"";
 				DEVELOPMENT_TEAM = G466A7N8C9;
@@ -277,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maceInc.Dreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,9 +442,11 @@
 		};
 		F0498299267A539F009FED59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225575D317387066AD37C42E /* Pods-Dreamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dreamer/Dreamer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Dreamer/Preview Content\"";
 				DEVELOPMENT_TEAM = G466A7N8C9;
@@ -299,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmace.Dreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maceInc.Dreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
